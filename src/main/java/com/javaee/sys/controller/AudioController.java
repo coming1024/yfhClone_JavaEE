@@ -44,10 +44,8 @@ public class AudioController {
     AudioMapper audioMapper;
 
     @GetMapping()
-
     @ApiOperation(value = "find all audios")
     public List findAllAudios() {
-        System.out.println("JavaeE");
         return audioService.findAllAudios();
     }
 
